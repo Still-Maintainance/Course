@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "../public/img/logo-udemy.svg";
+
 
 function Navbar() {
   return (
     <>
-      <div className="flex items-center justify-between px-6 py-3 gap-5 bg-white shadow-md">
+      <div className="flex items-center justify-between px-6 py-3 mb-10 gap-5 bg-white shadow-md">
         {/* Left Section: Logo + Explore + Search */}
         <div className="flex items-center space-x-6">
-          <img src={logo} alt="Logo" className="h-8" />
+          <img src="/img/logo-udemy.svg" alt="Logo" className="h-8" />
 
           {/* Explore Button */}
           <button className="text-sm font-medium text-gray-700 hover:text-black">
@@ -47,7 +47,7 @@ function Navbar() {
         </div>
 
         {/* Right Section: Other buttons and icons */}
-        <div className="flex items-center space-x-6 ">
+        <div className="flex items-center space-x-4 ">
           <button className="text-sm font-medium text-gray-700 hover:text-black">
             Udemy Business
           </button>
@@ -96,7 +96,7 @@ function Navbar() {
 
           <div
             aria-hidden="true"
-            className="user-profile-dropdown_dropdown-button-avatar__3RvHP ud-avatar ud-heading-sm flex items-center justify-center w-12 h-12 bg-gray-700 rounded-full text-white font-semibold"
+            className="user-profile-dropdown_dropdown-button-avatar__3RvHP ud-avatar ud-heading-sm flex items-center justify-center w-10 h-10 bg-black rounded-full text-white font-semibold"
           >
             AS
           </div>
