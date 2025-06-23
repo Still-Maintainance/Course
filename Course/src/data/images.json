@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Build Faster, Deploy Smarter",
+    "description": "Accelerate your development workflow with modern tools and cloud-native practices. Streamline CI/CD pipelines, reduce deployment friction, and ship high-quality products with confidence and speed.",
+    "image": "/img/img1.jpg",
+    "bgColor": "#F8FAFC",
+    "shapeColor": "#7C3AED",
+    "textColor": "black"
+  },
+  {
+    "id": 2,
+    "title": "AI-Powered Innovation",
+    "description": "Unlock the potential of artificial intelligence to create intelligent, responsive apps. Integrate machine learning, automate decision-making, and craft smarter user experiences that adapt and evolve.",
+    "image": "/img/img2.jpg",
+    "bgColor": "#F3F4F6",
+    "shapeColor": "#2563EB",
+    "textColor": "black"
+  },
+  {
+    "id": 3,
+    "title": "From Code to Cloud",
+    "description": "Master the complete pipeline from writing source code to deploying it on scalable cloud infrastructure. Explore containerization, orchestration, and continuous delivery techniques to modernize your workflow.",
+    "image": "/img/img3.jpg",
+    "bgColor": "#FFF7ED",
+    "shapeColor": "#F97316",
+    "textColor": "black"
+  },
+  {
+    "id": 4,
+    "title": "Data-Driven Decisions",
+    "description": "Leverage the power of analytics to make informed decisions. Visualize key metrics, uncover hidden trends, and translate raw data into actionable strategies that drive growth and innovation.",
+    "image": "/img/img4.jpg",
+    "bgColor": "#F0FDF4",
+    "shapeColor": "#10B981",
+    "textColor": "white"
+  },
+  {
+    "id": 5,
+    "title": "Secure by Design",
+    "description": "Embed security into every stage of your development lifecycle. Implement zero-trust architecture, enforce secure coding practices, and safeguard sensitive data from modern cyber threats.",
+    "image": "/img/img5.png",
+    "bgColor": "#EFF6FF",
+    "shapeColor": "#3B82F6",
+    "textColor": "black"
+  }
+]

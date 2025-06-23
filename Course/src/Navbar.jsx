@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./assets/img/logo-udemy.svg";
+import logo from "../public/img/logo-udemy.svg";
 
 function Navbar() {
   return (
