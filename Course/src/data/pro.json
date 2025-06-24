@@ -1,0 +1,148 @@
+[
+  {
+    "id": "course1",
+    "name": "Data Structures and Algorithms Complete Course - CPP & JAVA",
+    "instructor": "GeeksforGeeks (GfG)",
+    "rating": 4.5,
+    "reviews": 3997,
+    "price": 499,
+    "image": "./img/courses/course1.jpg"
+  },
+  {
+    "id": "course2",
+    "name": "Complete Web Development Course",
+    "instructor": "Hitesh Choudhary",
+    "rating": 4.6,
+    "reviews": 12259,
+    "price": 499,
+    "image": "./img/courses/course2.webp"
+  },
+  {
+    "id": "course3",
+    "name": "Mastering Data Structures & Algorithms using C and C++",
+    "instructor": "Abdul Bari",
+    "rating": 4.7,
+    "reviews": 55167,
+    "price": 529,
+    "image": "./img/courses/course3.webp"
+  },
+  {
+    "id": "course4",
+    "name": "Java Data Structures and Algorithms Masterclass",
+    "instructor": "Elshad Karimov",
+    "rating": 4.5,
+    "reviews": 7275,
+    "price": 639,
+    "image": "./img/courses/course4.webp"
+  },
+  {
+    "id": "course5",
+    "name": "MERN Stack: All You Need to Know with Practical Project",
+    "instructor": "Jahid Hiron",
+    "rating": 4.6,
+    "reviews": 339,
+    "price": 529,
+    "image": "./img/courses/course5.webp"
+  },
+  {
+    "id": "course6",
+    "name": "Easy to Advanced Data Structures",
+    "instructor": "William Fiset",
+    "rating": 4.6,
+    "reviews": 7621,
+    "price": 509,
+    "image": "./img/courses/course6.webp"
+  },
+  {
+    "id": "course7",
+    "name": "Data Structures and OOP with C++: CS104, CS105 Masterclass",
+    "instructor": "OCSaly Academy",
+    "rating": 4.3,
+    "reviews": 498,
+    "price": 479,
+    "image": "./img/courses/course7.jpg"
+  },
+  {
+    "id": "course8",
+    "name": "Python for Data Structures, Algorithms, and Interviews!",
+    "instructor": "Jose Portilla",
+    "rating": 4.6,
+    "reviews": 11748,
+    "price": 779,
+    "image": "./img/courses/course8.webp"
+  },
+  {
+    "id": "course9",
+    "name": "Data Structures and Algorithms: Deep Dive Using Java",
+    "instructor": "Tim Buchalka",
+    "rating": 4.3,
+    "reviews": 22153,
+    "price": 639,
+    "image": "./img/courses/course9.webp"
+  },
+  {
+    "id": "course10",
+    "name": "Master the Coding Interview: Big Tech (FAANG) Interviews",
+    "instructor": "Andrei Neagoie",
+    "rating": 4.6,
+    "reviews": 5720,
+    "price": 529,
+    "image": "./img/courses/course10.webp"
+  },
+
+  {
+    "id": "course11",
+    "name": "Learn Python: The Complete Python Programming Course",
+    "instructor": "Avinash Jain, The Codex",
+    "rating": 4.2,
+    "reviews": 5673,
+    "price": 509,
+    "image": "./img/courses/course11.webp"
+  },
+  {
+    "id": "course12",
+    "name": "Data Structures and Algorithms in Python",
+    "instructor": "Glassbyte Team",
+    "rating": 4.8,
+    "reviews": 369,
+    "price": 619,
+    "image": "./img/courses/course12.webp"
+  },
+  {
+    "id": "course13",
+    "name": "Data Structures and Algorithms: In-Depth DSA using Python",
+    "instructor": "Syed Mohiuddin",
+    "rating": 4.6,
+    "reviews": 3683,
+    "price": 609,
+    "image": "./img/courses/course13.webp"
+  },
+  {
+    "id": "course14",
+    "name": "JavaScript Algorithms and Data Structures Masterclass",
+    "instructor": "Colt Steele",
+    "rating": 4.8,
+    "reviews": 30024,
+    "price": 639,
+    "image": "./img/courses/course14.webp"
+  },
+
+  {
+    "id": "course16",
+    "name": "Javascript with Data Structires and Algorithim",
+    "instructor": "Academind by Maximilian Schwarzmüller",
+    "rating": 4.6,
+    "reviews": 230928,
+    "price": 639,
+    "image": "./img/courses/course15.jpg"
+  },
+  {
+    "id": "course16",
+    "name": "React - The Complete Guide 2025 (incl. Next.js, Redux)",
+    "instructor": "Academind by Maximilian Schwarzmüller",
+    "rating": 4.6,
+    "reviews": 230928,
+    "price": 639,
+    "image": "./img/courses/course16.webp"
+  }
+]

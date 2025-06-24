@@ -6,12 +6,12 @@ import HomePageFooter from "./HomePageFooter";
 function HomePage() {
   return (
     <>
-     
-        <Navbar />
-        <Carousel />
-        <Product />
-        <HomePageFooter/>
-      
+      <title>Online Courses - Learn Anything on Your Schedule | Udemy</title>
+
+      <Navbar />
+      <Carousel />
+      <Product />
+      <HomePageFooter />
     </>
   );
 }
