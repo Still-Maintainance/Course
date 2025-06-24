@@ -43,19 +43,19 @@ function Carousel() {
   };
 
   return (
-    <div className="w-full  px-4 py-20">
+    <div className="w-full  px-4 py-10">
       <Slider {...settings}>
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-full flex justify-center items-center"
+            className="w-full flex  justify-center items-center"
             style={{ backgroundColor: item.bgColor }}
           >
             <div className="relative w-full max-w-7xl mx-auto rounded-xl overflow-hidden shadow-lg">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-[400px] object-cover"
+                className="w-full border h-[400px] object-cover"
               />
 
               <div className="absolute inset-0 flex flex-col justify-center px-10 py-12">

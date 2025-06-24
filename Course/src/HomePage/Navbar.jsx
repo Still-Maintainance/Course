@@ -1,22 +1,21 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <>
       <div className="flex items-center justify-between px-6 py-3 mb-10 gap-5 bg-white shadow-md">
-        {/* Left Section: Logo + Explore + Search */}
         <div className="flex items-center space-x-6">
-          <img src="/img/logo-udemy.svg" alt="Logo" className="h-8" />
+          
+          <Link to="/">
+            <img src="/img/logo-udemy.svg" alt="Logo" className="h-8" />
+          </Link>
 
-          {/* Explore Button */}
           <button className="text-sm font-medium text-gray-700 hover:text-black">
             Explore
           </button>
 
-          {/* Search Input */}
           <div className="relative w-[1100px]">
-            {/* Search Icon (absolute inside input) */}
             <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +36,6 @@ function Navbar() {
               </svg>
             </div>
 
-            {/* Search Input */}
             <input
               type="text"
               placeholder="Search for anything"
@@ -46,7 +44,6 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Right Section: Other buttons and icons */}
         <div className="flex items-center space-x-4 ">
           <button className="text-sm font-medium text-gray-700 hover:text-black">
             Udemy Business
@@ -58,8 +55,10 @@ function Navbar() {
             My Learning
           </button>
 
-          {/* Cart Icon Button */}
-          <button className="flex p-2 rounded focus:outline-none active:outline-none">
+          <Link
+            to="/cart"
+            className="flex p-2 rounded focus:outline-none active:outline-none"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2em"
@@ -76,11 +75,8 @@ function Navbar() {
               <circle r="1" cy="21" cx="20"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
-          </button>
+          </Link>
 
-          {/* Avatar Circle with Initials */}
-
-          {/* Notification Icon */}
           <button className="p-2 rounded focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"

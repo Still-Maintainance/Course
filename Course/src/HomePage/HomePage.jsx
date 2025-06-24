@@ -3,14 +3,13 @@ import Carousel from "./Carousel";
 import Product from "./Product";
 import HomePageFooter from "./HomePageFooter";
 
-function HomePage() {
+function HomePage({ cart, setCart }) {
   return (
     <>
-      <title>Online Courses - Learn Anything on Your Schedule | Udemy</title>
-
-      <Navbar />
+      <title>Online Courses - Learn Anything , On Your Schedule | Udemy.com</title>
+      <Navbar cart={cart} />
       <Carousel />
-      <Product />
+      <Product cart={cart} setCart={setCart} />
       <HomePageFooter />
     </>
   );
