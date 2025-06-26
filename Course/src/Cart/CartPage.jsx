@@ -1,4 +1,8 @@
 import Navbar from "../HomePage/Navbar";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import HomePageFooter from "../HomePage/HomePageFooter";
+import { useState } from "react";
 
 function CartPage({ cart, setCart }) {
   const groupedCart = cart.reduce((acc, course) => {
@@ -17,9 +21,33 @@ function CartPage({ cart, setCart }) {
     setCart([]);
   }
 
+  const [button,setButton] = useState(true);
+
+  function dis()
+    {
+      setButton(false);
+    }
+  
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
+      <title>Cart</title>
       <Navbar />
+
+     {button && (
+       <div className="flex p-5 items-center justify-center">
+        <div className="flex p-5 items-center rounded shadow-md  justify-center bg-purple-700 w-full max-w-sm hover:shadow-2xl duration-300 ">
+          <p className="font-semibold text-white text-2xl">Your Courses </p>
+        </div>
+      </div>
+
+     )}
+
+
 
       <div className="flex flex-col items-center w-full px-6 py-10 gap-6">
         {cartItems.length === 0 ? (
@@ -62,22 +90,31 @@ function CartPage({ cart, setCart }) {
                   <p className="text-lg font-semibold text-black">
                     ₹{course.quantity * parseFloat(course.price)}
                   </p>
-                  <button className="bg-[#5624d0] text-white px-5 py-2 rounded hover:bg-[#3e1ca0] transition duration-200">
-                    Buy
-                  </button>
                 </div>
               </div>
             </div>
           ))
         )}
 
-        <button
-          onClick={clearCart}
-          className="bg-[#5624d0] text-white px-5 py-2 rounded hover:bg-[#3e1ca0] transition duration-200"
-        >
-          Clear Cart
-        </button>
+        <div className="flex  justify-center items-center gap-5">
+          <Link to="/order">
+            <button className="bg-[#5624d0] text-white px-5 py-2 rounded hover:bg-[#3e1ca0] transition duration-200">
+              Proceed to Buy
+            </button>
+          </Link>
+
+          <button
+            onClick={() =>{
+              clearCart();
+              dis();
+            }}
+            className="bg-[#5624d0] text-white px-5 py-2 rounded hover:bg-[#3e1ca0] transition duration-200"
+          >
+            Clear Cart
+          </button>
+        </div>
       </div>
+      <HomePageFooter />
     </>
   );
 }

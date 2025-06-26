@@ -3,6 +3,7 @@ import data from "../data/images.json";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
 
 function NextArrow(props) {
   const { onClick } = props;
@@ -28,7 +29,17 @@ function PrevArrow(props) {
   );
 }
 
+
 function Carousel() {
+
+  const[button,setButton] = useState(true);
+
+  function dis()
+    {
+      setButton(false);
+    }
+
+
   const settings = {
     dots: true,
     infinite: true,
@@ -75,25 +86,30 @@ function Carousel() {
         ))}
       </Slider>
 
-      <div className="flex justify-center pt-12">
-        <div className="flex items-center gap-6 bg-black text-white px-8 py-6 rounded-lg shadow-lg max-w-7xl w-full">
-          <p className="flex-1 text-sm md:text-base leading-relaxed">
-            Training 2 or more people?&nbsp;
-            <span className="font-semibold">
-              Get your team access to Udemy's top 30,000+ courses.
-            </span>
-          </p>
+       { button && (
+        <div className="flex justify-center pt-12">
+          <div className="flex items-center gap-6 bg-black text-white px-8 py-6 rounded-lg shadow-lg max-w-7xl w-full">
+            <p className="flex-1 text-sm md:text-base leading-relaxed">
+              Training 2 or more people?&nbsp;
+              <span className="font-semibold">
+                Get your team access to Udemy's top 30,000+ courses.
+              </span>
+            </p>
 
-          <div className="flex gap-3 flex-shrink-0">
-            <button className="bg-white text-black font-semibold px-4 py-2 rounded hover:bg-gray-200 transition">
-              Get Udemy Business
-            </button>
-            <button className=" text-white border border-white font-semibold px-4 py-2 rounded ">
-              Dismiss
-            </button>
+            <div className="flex gap-3 flex-shrink-0">
+              <button className="bg-white text-black font-semibold px-4 py-2 rounded hover:bg-gray-200 transition">
+                Get Udemy Business
+              </button>
+              <button
+                onClick={() => dis(false)} // 🔥 hide entire banner
+                className="text-white border border-white font-semibold px-4 py-2 rounded hover:bg-white hover:text-black transition"
+              >
+                Dismiss
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

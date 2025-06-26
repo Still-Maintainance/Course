@@ -16,7 +16,7 @@ function Product({ setCart }) {
           {pro.map((course) => (
             <div
               key={course.id}
-              className="flex flex-col justify-between h-[360px] w-full sm:w-[45%] md:w-[22%] bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              className="flex flex-col border justify-between h-[360px] w-full sm:w-[45%] md:w-[22%] bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
             >
               <img
                 src={course.image}
